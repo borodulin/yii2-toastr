@@ -97,11 +97,11 @@ class ToastrWidget extends \yii\base\Widget
 		}
 		$params=[];
 		if($this->message)
-			$params[]='"'.Html::encode($this->message).'"';
+			$params[]=Json::htmlEncode(Html::encode($this->message));
 		if($this->title)
-			$params[]='"'.Html::encode($this->title).'"';
+			$params[]=Json::htmlEncode(Html::encode($this->title));
 		if(!empty($params)){
-			$view->registerJs("toastr['{$this->type}'](".implode(',', $params).");");
+			$view->registerJs('toastr[' . Json::htmlEncode((string)$this->type) . '](' . implode(',', $params) . ');');
 		}
 	}	
 }
