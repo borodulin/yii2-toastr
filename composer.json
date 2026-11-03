@@ -1,7 +1,12 @@
 {
     "name": "conquer/toastr",
     "description": "Yii2 toastr widget",
-    "keywords": ["yii2", "extension", "widget", "toastr"],
+    "keywords": [
+        "yii2",
+        "extension",
+        "widget",
+        "toastr"
+    ],
     "homepage": "https://github.com/borodulin/yii2-toastr",
     "type": "yii2-extension",
     "license": "MIT",
@@ -14,17 +19,17 @@
     ],
     "extra": {
         "branch-alias": {
-          "dev-master": "1.0.3.x-dev"
+            "dev-master": "1.0.3.x-dev"
         }
-      },
-    "require": {
-    	"php": ">=5.4.0",
-    	"yiisoft/yii2": "*",
-    	"bower-asset/toastr": "~2.1.1"
     },
-	"autoload": {
-		"psr-4": {
-			"conquer\\toastr\\": ""
-		}
-	}
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "yiisoft/yii2": "^2.0",
+        "bower-asset/toastr": "~2.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "conquer\\toastr\\": ""
+        }
+    }
 }
